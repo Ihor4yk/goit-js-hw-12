@@ -13,7 +13,6 @@ export async function getImages(query, currentPage) {
     per_page: 15,
   }
   const url = `${BASE_URL}${END_POINT}?${params}`;
-
   const res = await axios.get(url, { params, });
   return res.data;
 }
